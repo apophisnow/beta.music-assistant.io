@@ -75,6 +75,7 @@ nav:
       - YouTube Music: music-providers/youtube-music.md
   - Player Providers:
     - player-support/index.md
+    - AES67 Multicast Stream: player-support/aes67.md
     - AirPlay: player-support/airplay.md
     - Alexa: player-support/alexa.md
     - Bluesound: player-support/bluesound.md
