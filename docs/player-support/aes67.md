@@ -1,11 +1,14 @@
 ---
-title: AES67 Multicast Stream Player Provider
-description: Details for the AES67 Multicast Stream Player Provider
+title: AES67 Sender Player Provider
+description: Details for the AES67 Sender Player Provider
 ---
 
-# AES67 Multicast Stream
+# AES67 Sender
 
-Music Assistant supports streaming audio to professional AES67/RAVENNA/Dante (AES67 mode) receivers via IP multicast. This provider implements standards-compliant RTP/RTCP (RFC 3550) for audio transport and SAP/SDP (RFC 2974, RFC 4566) for automatic stream discovery. This component is contributed and maintained by [apophisnow](https://github.com/apophisnow).
+Music Assistant supports sending audio to professional AES67/RAVENNA/Dante (AES67 mode) receivers via IP multicast. This sender provider implements standards-compliant RTP/RTCP (RFC 3550) for audio transport and SAP/SDP (RFC 2974, RFC 4566) for automatic stream discovery. This component is contributed and maintained by [apophisnow](https://github.com/apophisnow).
+
+!!! note "Send-Only Provider"
+    This is a **sender/transmitter** provider that streams audio FROM Music Assistant TO AES67 receivers. It does not receive AES67 streams. For receiving AES67 audio into Music Assistant, a separate AES67 Receiver plugin would be needed (potential future enhancement).
 
 AES67 is a technical standard for high-performance audio-over-IP interoperability, widely used in professional audio, broadcast, and commercial installation environments. It ensures seamless communication between devices from different manufacturers that support the standard, including RAVENNA, Dante (when in AES67 mode) equipment, and software players like VLC Media Player.
 
